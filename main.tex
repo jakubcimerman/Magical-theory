@@ -1,0 +1,197 @@
+\documentclass[12pt]{book}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=1.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage[slovak]{babel}
+\usepackage[final]{pdfpages}
+\usepackage{units}
+\usepackage{subcaption}
+\usepackage{longtable}
+\usepackage{epstopdf}
+\usepackage{amsfonts}
+\usepackage{footnote}
+\usepackage{subfiles}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\makesavenoteenv{tabular}
+\makesavenoteenv{table}
+\linespread{1.25}
+
+\graphicspath{{images/}{../../images/}}
+
+\newcommand{\lambdabar}{{\mkern0.75mu\mathchar '26\mkern -9.75mu\lambda}}
+
+\def\mfrok{2018}
+\def\mfnazov{Vypracované štátnicové otázky}
+\def\hermiona{Bc. "Hermiona" Radka Sochorová}
+\def\ron{Bc. "Ron" Lukáš Holub}
+\def\harry{Bc. "Harry" Jakub Cimerman}
+
+\def\mfmiesto{Praha, \mfrok}
+
+\begin{document}     
+
+\thispagestyle{empty}
+
+\begin{center}
+\sc\large
+České vysoké učení technické v Praze\\
+Fakulta jaderná a fyzikálně inženýrská
+
+\vfill
+
+{\Huge\textbf{Magical theory}\\ \vspace{0.2cm}
+\Large of particle physics}
+\end{center}
+
+\vfill
+
+{\sc\large 
+\noindent \mfrok\\
+\hermiona \\
+\ron \\
+\harry
+}
+
+\eject % EOP i
+
+
+\newpage
+
+\chapter*{Predhovor}
+
+V rámci príprav na štátnice sme sa my traja dohodli, že si všetky otázky rozdelíme, pečlivo vypracujeme a nakoniec aj navzájom skontrolujeme. Predsa len hľadať na poslednú chvíľu materiály z rôznych zdrojov nie je podľa nášho gusta. 
+
+Na projekte sme začali pracovať už vo februári. Vytvorili sme si templaty na jednotlivé otázky, vybrali sme, kto bude písať ktorú otázku a postupne sme ich vo voľnom čase začali vypracovávať. Taktiku sme mali veľmi dobrú: každú otázku niekto vypracoval a niekto iný skontroloval, upravil gramatiku a štylistiku. Každý z nás teda po skončení práce mal tretinu otázok naučenú perfektne, vďaka tomu že ich písal, tretinu už mal prečítanú a ostávalo sa doučiť poslednú tretinu.
+
+Všetko išlo ako po masle a 23. mája sme mali všetky otázky spracované, skontrolované a napísané a mohlo sa ísť do tlačiarne. Viac ako tri mesiace práce, množstvo hodín strávených hľadaním zdrojov, prekladaním, písaním, čítaním a kontrolovaním a na konci toho všetkého jeden päťstostranový dokument. 
+
+Sme tiež veľmi radi, že sa nám podarilo napísať celý dokument československy. O úrovni vedy v krajine predsa hovorí aj množstvo odborného materiálu v danom jazyku.
+
+Ak náhodou používaš tento dokument, mysli na to, že nás táto práca stála hromadu času a nervov a tak by neuškodilo aspoň poďakovať. Ak v práci nájdeš nejakú chybu alebo nejasnosť, neváhaj nás kontaktovať, aby sme text opravili a ďalej vylepšili.
+
+Príjemné čítanie
+
+\begin{flushright}
+Radka\\
+Lukáš\\
+Jakub
+\end{flushright}
+
+\vspace{5cm}
+jakub.cimerman(at)gmail.com
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\part{Subatómová fyzika}
+
+\subfile{subatom/01/main}
+
+\subfile{subatom/02/main}
+
+\subfile{subatom/03/main}
+
+\subfile{subatom/06/main}
+
+\subfile{subatom/07/main}
+
+\subfile{subatom/08/main}
+
+\subfile{subatom/09/main}
+
+\subfile{subatom/10/main}
+
+\part{Experimentálne metódy jadrovej a subjadrovej fyziky}
+
+\subfile{emjsf/01/main}
+
+\subfile{emjsf/02/main}
+
+\subfile{emjsf/03/main}
+
+\subfile{emjsf/04/main}
+
+\subfile{emjsf/08/main}
+
+\subfile{emjsf/09/main}
+
+\subfile{emjsf/10/main}
+
+\part{Jaderná spektroskopie}
+
+\subfile{js/01/main}
+
+\subfile{js/02/main}
+
+\subfile{js/03/main}
+
+\subfile{js/04/main}
+
+\subfile{js/05/main}
+
+\subfile{js/06/main}
+
+\subfile{js/07/main}
+
+\subfile{js/09/main}
+
+\subfile{js/10/main}
+
+
+\bibliographystyle{plain}
+\bibliography{literatura}
+
+\begin{thebibliography}{1}
+\addcontentsline{toc}{chapter}{Literatúra}
+
+\bibitem{1} \textit{Wikipedia - The Free Encyclopedia.} [online] https://www.wikipedia.org
+
+\bibitem{11} G. Knoll, \textit{Radiation detection and measurement.} Wiley, 2010. ISBN 978-0470131480.
+
+\bibitem{2} V. Wagner, \textit{Prednášky k predmetu Jaderná spektroskopie.} [online] http://alf.ujf.cas.cz/~wagner/
+
+\bibitem{3} V. Petráček, \textit{Subatomová fyzika I.} 2009. [online] \\ https://physics.fjfi.cvut.cz/files/predmety/02SF/common/subatomovka-book-obr-zc12.2.10.pdf
+
+\bibitem{4} D. Skoupil, \textit{Subatomová fyzika 2.} 2010. [online] https://data.ejcf.cz/materials/SF\_-\_Subatomova\_fyzika/Pseudoskripta\%20SF2.pdf
+
+\bibitem{5} D. Skoupil, \textit{Otázky a odpovědi ke státním závěrečným zkouškám magisterského studia EJF.} 2012. [online] \\https://data.ejcf.cz/materials/SZZ\_-\_Statni\_zaverecne\_zkousky/ING/OaO\%20-\%20SF-EMJSF-FC.pdf
+
+\bibitem{19} V. Ullmann, \textit{Jaderná a radiační fyzika, nukleární medicína.} [online] \\http://astronuklfyzika.cz/strana2.htm
+
+\bibitem{13} G. Lutz, \textit{Semiconductor Radiation Detectors.} Springer, 1999. ISBN 978-3-540-71678-5.
+
+\bibitem{14} R. Joost a R. Salomon, \textit{CDL, a Precise, Low-Cost Coincidence Detector Latch.} Electronics, 2015, ISSN 2079-9292.
+
+\bibitem{15} I. Bikit, et al. \textit{Coincidence Techniques in Gamma-ray Spectroscopy.} Physics Procedia, 2012.
+
+\bibitem{16} J. Chýla, \textit{Quarks, partons and Quantum Chromodynamics.} 2004.
+
+\bibitem{17} J. Hořejší, \textit{Fundamentals of Electroweak Theory.} Karolinum, 2003. ISBN 978-8024606392.
+
+\bibitem{6} L. Machala, \textit{Základy M"ossbauerovy spektroskopie.} [online] \\https://fyzika.upol.cz/cs/system/files/download/vujtek/texty/mbas-z.pdf
+
+\bibitem{7} Č. Šimáně, \textit{M"ossbauerův jev.} 1961. [online] \\https://dml.cz/bitstream/handle/10338.dmlcz/138115/PokrokyMFA\_06-1961-5\_3.pdf
+
+\bibitem{8} P. Novák, \textit{M"ossbaerův spektrometr s časovým rozlišením detekce fotonů záření gama - vývoj a aplikace.} Dizertační práce, 2016. [online] https://theses.cz/id/htg5ya/Novak\_DP\_AR.pdf
+
+\bibitem{18} M. Richtrová, \textit{Urychlovače elementárních částic.} Bakalářská práce, 2008. [online] \\https://is.muni.cz/th/cbysw/bc.pdf
+
+\bibitem{20} J. Kratz, K. Lieser, \textit{Nuclear and Radiochemistry.} Wiley, 2013. ISBN 978-3527329014.
+
+
+\bibitem{9} \textit{XPS.} [online] http://physics.mff.cuni.cz/kfpp/s4r/povrch/
+
+\bibitem{10} \textit{CERN.} [online] https://home.cern/
+
+\bibitem{12} \textit{The STAR experiment.} [online] http://www.star.bnl.gov/
+
+\end{thebibliography}
+
+\end{document}
