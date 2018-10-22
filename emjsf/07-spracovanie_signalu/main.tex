@@ -4,15 +4,14 @@
 
 \begin{document}
 \chapter{Systémy pre ukladanie a spracovanie signálu z detektorov}
-
 \section{Elektronika a príklady jednoduchých detekčných systémov}
 Elektronika je kľúčovou súčasťou všetkých moderných detekčných systémov. Účelom front-end elektroniky a systémov na spracovanie signálu je
 \begin{itemize}
-\item Nadobudnutie (získání) elektrického signálu zo snímača. Typicky sa jedná o krátky elektricky impulz.
+\item Nadobudnutie elektrického signálu zo snímača. Typicky sa jedná o krátky elektricky impulz.
 \item Prispôsobenie časovej odpovedi systému na optimalizáciu minimálneho detekčného systému, energetického merania, času príchodu, necitlivosti senzora na tvarovanie signálu alebo kombinácia týchto efektov.
 \item Digitalizácia signálu a jeho následné uloženie na neskoršiu analýzu
 \end{itemize}
-Aj keď sú konfigurácie detektorov pomerne dosť zložité, vyžaduje sa použitie len niekoľkých základných princípov získavania signálu. Existujú niektoré spoločné základné prvky vyčítaciech systémov. Front-end obsahuje predzosilňovač, tvarovač pulzu, vyrovnávaciu pamäť a digitalizér , ktorý konvertuje bežný analógový vstup na digitálny výstup. V dnešných, vysoko energických fyzikálnych systémoch prakticky všetky detektory vyžadujú konverziu primárnej detekcie na elektrické signály.
+Aj keď sú konfigurácie detektorov pomerne dosť zložité, vyžaduje sa použitie len niekoľkých základných princípov získavania signálu. Existujú niektoré spoločné základné prvky vyčítacích systémov. Front-end obsahuje predzosilňovač, tvarovač pulzu, vyrovnávaciu pamäť a digitalizér, ktorý konvertuje bežný analógový vstup na digitálny výstup. V dnešných vysoko-energických fyzikálnych systémoch prakticky všetky detektory vyžadujú konverziu primárnej detekcie na elektrické signály.
 
 Existujú dva základné typy detektorov, ktoré môžme rozdeliť podľa produkcie signálu
 \begin{itemize}
@@ -28,9 +27,9 @@ Napríklad v driftových komorách, mnoho-káblových proporcionálnych komorác
 \label{em10:fig:priamaschema}
 \end{figure}
 
-Na obrázku (\ref{em10:fig:priamaschema}) môžme vidieť príklad schémy priamej detekcie signálu. Senzor konvertuje energiu uloženú nabitou časticou (alebo fotónovou) na elektrický signál. Vytvorený signálny náboj môže byť dosť malý, preto je potrebné signál senzora zosilniť. Veľkosť signálu senzora je predmetom štatistických výkyvov a elektronický šum ďalej rozmazáva signál, predzosilňovač musí byť starostlivo navrhnutý tak, aby sa minimalizoval elektronický šum. Dôležitým parametrom je kapacita senzora a kapacita zosilňovača pretože pomer signál-šum narastá s narastajúcou kapacitou. 
+Na obrázku (\ref{em10:fig:priamaschema}) môžme vidieť príklad schémy priamej detekcie signálu. Senzor konvertuje energiu uloženú nabitou časticou (alebo fotónovou) na elektrický signál. Vytvorený signálny náboj môže byť dosť malý, preto je potrebné signál senzora zosilniť. Veľkosť signálu senzora je predmetom štatistických výkyvov a elektronický šum ďalej rozmazáva signál. Predzosilňovač musí byť starostlivo navrhnutý tak, aby sa minimalizoval elektronický šum. Dôležitým parametrom je kapacita senzora a kapacita zosilňovača pretože pomer signál-šum narastá s narastajúcou kapacitou.
 
-Príspevok elektronického šumu závisí kriticky aj od ďalšej fázy, tvarovača pulzu, ktorý určuje šírku pulzu systému a tým aj celkový príspevok elektronického šumu. Tvarovač tiež obmedzuje trvanie impulzu, ktorý nastavuje maximálnu možnú frekvenciu signálu. Výstup tvarovača pulzu smeruje do analog-digital konvertora (ADC), ktorý konvertuje veľkosť analógového signálu na bitový vzorku vhodnú pre následné digitálne ukladanie a spracovanie.
+Príspevok elektronického šumu závisí kriticky aj od ďalšej fázy, tvarovača pulzu, ktorý určuje šírku pulzu systému a tým aj celkový príspevok elektronického šumu. Tvarovač tiež obmedzuje trvanie impulzu, ktorý nastavuje maximálnu možnú frekvenciu signálu. Výstup tvarovača pulzu smeruje do analog-digital konvertora (ADC), ktorý konvertuje veľkosť analógového signálu na bitovú vzorku vhodnú pre následné digitálne ukladanie a spracovanie.
 
 \begin{figure}[!h]
 \includegraphics[width=1.0\textwidth]{emsf-10-schema1.png}
@@ -39,7 +38,7 @@ Príspevok elektronického šumu závisí kriticky aj od ďalšej fázy, tvarova
 \label{em10:fig:nepriamaschema}
 \end{figure}
 
-Na obrázku (\ref{em10:fig:nepriamaschema}) môžme pre zmenu vidieť príklad schémy nepriamej detekcie signálu. Scintilačný detektor využíva nepriamu detekciu, pričom najskôr sa absorbovaná energia premení na viditeľné svetlo. Nastáva zvýšenie amplitúdy pomocou elektrónového násobiča. Signál na výstupu fotonásobiča (PMT) je prúdový impulz, integrovaný v priebehu času. Tento impulz obsahuje signálny náboj, ktorý je úmerný absorbovanej energii. PMT výstupný impulz je privádzaný priamo do prahového diskriminátora, ktorý sa zapne, keď signál prekročí vopred určenú prahovú hodnotu ($V_{TH}$). Elektrónový násobič môže poskytnúť dostatočný zisk, takže nie je potrebný žiadny predzosilňovač.
+Na obrázku (\ref{em10:fig:nepriamaschema}) môžme pre zmenu vidieť príklad schémy nepriamej detekcie signálu. Scintilačný detektor využíva nepriamu detekciu, pričom najskôr sa absorbovaná energia premení na viditeľné svetlo. Nastáva zvýšenie amplitúdy pomocou elektrónového násobiča. Signál na výstupe fotonásobiča (PMT) je prúdový impulz, integrovaný v priebehu času. Tento impulz obsahuje signálny náboj, ktorý je úmerný absorbovanej energii. PMT výstupný impulz je privádzaný priamo do prahového diskriminátora, ktorý sa zapne, keď signál prekročí vopred určenú prahovú hodnotu ($V_{TH}$). Elektrónový násobič môže poskytnúť dostatočný zisk, takže nie je potrebný žiadny predzosilňovač.
 
 \section{Signálna integrácia}
 Signál zo senzoru je zvyčajne krátky prúdový pulz, $i_s(t)$. Avšak, fyzikálna veličina, ktorá nás zaujíma je častokrát depozitovaná energia v detektore. Nato aby sme ju získali musíme vyintegrovať cez všetky prúdové pulzy
@@ -52,7 +51,8 @@ Táto integrácia môže byť vykonaná v ľubovoľnej fáze lineárneho systém
 \end{itemize}
 
 Keď sa mobilné nosiče nábojov pohybujú smerom k elektródam, menia indukovaný náboj na senzorových elektródach, ktoré tvoria kondenzátor $C_d$. Ak má zosilňovač veľmi malý vstupný odpor $R_i$, potom časová konštanta, $T = R_i(C_d+C_i)$, na vybitie snímača je malá, a zosilňovač bude cítiť signálny prúd. $C_i$ je dynamická vstupná kapacita, viď (\ref{em10:fig:inter}). Ak je vstupná časová konštanta veľká v porovnaní s trvaním prúdového pulzu potom bude prúdový pulz integrovaný na senzorovej kapacite a výsledné napätie na vstupe zosilňovača bude
-$$ V_i = \frac{Q_s}{C_d + C_i}. $$ Takže vidíme, že veľkosť signálu závisí od kapacity senzora. V systéme s rôznymi kapacitami senzorov by sme sa museli vysporiadať s ďalšími kalibráciami. 
+$$ V_i = \frac{Q_s}{C_d + C_i}. $$ 
+Takže vidíme, že veľkosť signálu závisí od kapacity senzora. V systéme s rôznymi kapacitami senzorov by sme sa museli vysporiadať s ďalšími kalibráciami. 
 
 \begin{figure}[!h]
 \includegraphics[width=0.6\textwidth]{emsf-10-inter.png}
@@ -62,7 +62,7 @@ $$ V_i = \frac{Q_s}{C_d + C_i}. $$ Takže vidíme, že veľkosť signálu závis
 \end{figure}
 
 \section{Elektronický šum}
-Uvažujme prúd prúdiaci cez vzorku, ktorá je ohraničenú dvoma elektródami. tj. pohybujúcich sa $n$ elektrónov s rýchlosťou $v$. Indukovaný prúd závisí na medzere $I$ medzi elektródami ako 
+Uvažujme prúd prúdiaci cez vzorku, ktorá je ohraničenú dvoma elektródami, tj. pohybujúcich sa $n$ elektrónov s rýchlosťou $v$. Indukovaný prúd závisí na medzere $I$ medzi elektródami ako 
 $$ i = \frac{nev}{I}.$$
 Fluktuácia tohto prúdu je daná celkovým diferenciálom
 $$ \langle di \rangle^2 = \bigg( \frac{ne}{I} \langle dv \rangle  \bigg)^2 + \bigg( \frac{ve}{I} \langle dn \rangle  \bigg)^2,$$
@@ -104,7 +104,7 @@ Pre ukladanie údajov a následnú analýzu musí byť analógový signál na v�
 \item integrálna nelinearita: Je digitálny výstup úmerný analógovému vstupu?
 \item čas konverzie: Koľko času je potrebné na konverziu analógového signálu na digitálny výstup?
 \item výpočetná rýchlosť: Ako rýchlo môže začať nová konverzia po dokončení predchádzajúcej konverzie bez zavedenia škodlivých artefaktov?
-\item Stabilita: Menia sa parametre konverzie s časom?
+\item stabilita: Menia sa parametre konverzie s časom?
 \end{itemize}
 
 Uvedieme nejaké metódy, ktorými sa prevádza analógový signál na digitálny: flash conversion ADC (najjednoduchšia),  successive-approximation ADC (najpoužívanejšia) alebo the Wilkinson ADC.
@@ -117,7 +117,7 @@ Pri nasledujúcom opise budeme vychádzať z Trigger systému, ktorý je použí
 STAR Trigger systém je funkčne rozdelený na štyri rôzne úrovne - L0, L1, L2, L3. Interakcie, ktoré prechádzajú kritériami výberu v týchto po sebe nasledujúcich trigger úrovniach, sa posielajú do úložisk.
 
 \subsubsection{Level 0:}
-Tento level je najrýchlejší a analyzuje nespracované data a určuje, či sa požadovaný typ interakcie vyskytol v zrážke dvoch častíc. Údaje používané na tejto úrovni sú väčšinou z ZDC, BBC a VPD detektorov. Keď data spĺňajú podmienky tohto levelu tak pokročia do ďalšieho.
+Tento level je najrýchlejší a analyzuje nespracované dáta a určuje, či sa požadovaný typ interakcie vyskytol v zrážke dvoch častíc. Údaje používané na tejto úrovni sú väčšinou z ZDC, BBC a VPD detektorov. Keď dáta spĺňajú podmienky tohto levelu tak pokročia do ďalšieho.
 
 \subsubsection{Level 1, Level 2:}
 Level 1 a 2 fungujú v časovom období niekoľkých milisekúnd, počas ktorých sa údaje analyzujú podrobnejšie, aby sa zistilo, či udalosť spĺňa viac jemnejšie požadované kritériá. Ak tomu tak nie je, proces digitalizácie sa preruší a detektory sa uvoľnia pre nový triggering.
@@ -130,7 +130,7 @@ Systém DAQ (Data Acquisition) zhromažďuje dáta z rôznych častí detektora,
 \begin{itemize}
 \item poskytovanie online služieb (kontrola systému spustenia, monitorovanie toku dát, ovládanie detektorov atď.)
 \item uchovanie záznamov o stave údajov a stave detektora
-\item zabránenie poškodeniu dát
+\item zabránenie poškodenia dát
 \item poskytnutie flexibility pri zaznamenávaní údajov v rôznych konfiguráciách (uvedenie do prevádzky, kalibrácia, fyzikálne spracovanie údajov)
 \item minimalizácie doby nečinnosti
 \item cenová dostupnosť
@@ -145,13 +145,13 @@ Systém DAQ (Data Acquisition) zhromažďuje dáta z rôznych častí detektora,
 
 \begin{itemize}
 \item DAQ systém zhromažďuje údaje vytvorené detektorom a uchováva ich (pre pozitívne trigger rozhodnutia).
-\item Front-end elektronika prijíma signály od detektorov, triggerov, časovačov a produkuje dikitalizované informácie.
-\item Readout network číta front-end data a formuje kompletné udalosti - event building.
+\item Front-end elektronika prijíma signály od detektorov, triggerov, časovačov a produkuje digitalizované informácie.
+\item Readout network číta front-end dáta a formuje kompletné udalosti - event building.
 \item Centrálne DAQ ukladá údaje o udalostiach, dokáže spracovať a filtrovať údaje.
 \end{itemize}
 
 \section{Mŕtva doba DAQ}
-Mŕtva doba DAQ je zlomok času, ktorom experiment nemôže zaznamenať žiadne data. Medzi zdroje tohto mŕtveho času patri:
+Mŕtva doba DAQ je zlomok času, v ktorom experiment nemôže zaznamenať žiadne dáta. Medzi zdroje tohto mŕtveho času patri:
 \begin{itemize}
 \item mŕtva doba readout a trigger systému
 \item Prevádzková mŕtve časy (napr. Začiatky/zastávky obdobia zberu dát)
@@ -172,16 +172,16 @@ Uvažujme experiment určený na meranie času letu (TOF) častíc prechádzajú
 
 Vzniknuté obmedzenia:
 \begin{itemize}
-\item trigger rozhodnutie musí byť veľmi rýchle aby sa spustilo TDC pred príchodom signálov A, B, C.
-\item TDC vyčitanie do DAQ počítača je trochu pomalé.
-\item významná mŕtva doba ak je trigger rozsah veľký: readout mŕtva doma = trigger rozsah $\times$ celkový readout time
+\item Trigger rozhodnutie musí byť veľmi rýchle aby sa spustilo TDC pred príchodom signálov A, B, C.
+\item TDC vyčítanie do DAQ počítača je trochu pomalé.
+\item Významná mŕtva doba ak je trigger rozsah veľký: readout mŕtva doma = trigger rozsah $\times$ celkový readout time.
 \end{itemize}
 
 \section{Multi-level trigger}
-Často nemôžeme dosiahnuť požiadavky na vysokú efektivitu signálu a vysoké potlačenie pozadia s mimoriadne krátkym trigger oneskorením (zpožděním). Preto vzniká potreba zaviesť koncept multi-level trigger. Prvý trigger level má veľmi krátke oneskorenie, vysokú efektivitu signálu, ale skromné potlačenie pozadia. Niekedy sa nazýva pre-trigger. Následné trigger levely dosahujú vysoké potlačenie pozadia, s typicky vyšším oneskorením. Toto je vlastne to, čo sme už opisovali vyššie, keď sme opisovali trigger systém pre STAR experiment.
+Často nemôžeme dosiahnuť požiadavky na vysokú efektivitu signálu a vysoké potlačenie pozadia s mimoriadne krátkym trigger oneskorením. Preto vzniká potreba zaviesť koncept multi-level trigger. Prvý trigger level má veľmi krátke oneskorenie, vysokú efektivitu signálu, ale skromné potlačenie pozadia. Niekedy sa nazýva pre-trigger. Následné trigger levely dosahujú vysoké potlačenie pozadia s typicky vyšším oneskorením. Toto je vlastne to, čo sme už opisovali vyššie, keď sme opisovali trigger systém pre STAR experiment.
 
 \section{Tok dát na ALICE}
-Z hľadiska toku údajov je LHC veľmi komplexné potrubie toku údajov. Tieto údaje sa musia pohybovať nepretržite, pretože žiadna vyrovnávacia pamäť nie je dostatočne veľká na to, aby zvládla uchovať také množstvo údajov. Akékoľvek prerušenie toku dát vytvára vážne problémy. Údaje musia byť k dispozícii s veľmi krátkym oneskorením. Na obrázku (\ref{em10:fig:flow}) môžme vidieť čo schéma toku dát obsahuje.
+Z hľadiska toku údajov je LHC veľmi komplexné potrubie toku dát. Tieto údaje sa musia pohybovať nepretržite, pretože žiadna vyrovnávacia pamäť nie je dostatočne veľká na to, aby zvládla uchovať také množstvo údajov. Akékoľvek prerušenie toku dát vytvára vážne problémy. Údaje musia byť k dispozícii s veľmi krátkym oneskorením. Na obrázku (\ref{em10:fig:flow}) môžme vidieť čo schéma toku dát obsahuje.
 
 \begin{figure}[!h]
 \includegraphics[width=0.8\textwidth]{emsf-10-flow.png}
@@ -215,7 +215,7 @@ Akronymy detektorov a systémov:
 \label{em10:fig:architecture}
 \end{figure}
 
-\textbf{Jednotlivé systémy experimentu ALICE a proces tvorenia eventov:}
+\textbf{Jednotlivé systémy experimentu ALICE a proces tvorenia udalostí:}
 \begin{itemize}
 \item Trigger - CTP $\rightarrow$ LTUs $\rightarrow$ TTC $\rightarrow$ FEROs
 \item Výstup z detektora - FEROs $\rightarrow$ DDLs $\rightarrow$ RORCs - surové dáta z detektorov vstúpia do DAQ
@@ -230,7 +230,7 @@ Akronymy detektorov a systémov:
 \end{itemize}
 
 \section{Worldwide LHC Computing Grid (WLCG) - 20.6.2005}
-Projekt Worldwide LHC Computing Grid (WLCG) je celosvetová spolupráca viac ako 170 výpočtových centier v 42 krajinách, ktoré spájajú národné a medzinárodné gridové infraštruktúry. Poslaním projektu WLCG je poskytnúť globálne výpočtové zdroje na ukladanie, distribúciu a analýzu približne 50 Petabajtov údajov očakávaných v roku 2018 generovaných Large Hadron Collider (LHC) v CERN. Rozloženie štruktúry WLCG môžme vidieť na obrázku (\ref{em10:fig:tier}).
+Projekt Worldwide LHC Computing Grid (WLCG) je celosvetová spolupráca viac ako 170 výpočtových centier v 42 krajinách, ktoré spájajú národné a medzinárodné gridové infraštruktúry. Poslaním projektu WLCG je poskytnúť globálne výpočtové zdroje na ukladanie, distribúciu a analýzu približne 50 petabajtov údajov očakávaných v roku 2018 generovaných Large Hadron Collider (LHC) v CERN. Rozloženie štruktúry WLCG môžme vidieť na obrázku (\ref{em10:fig:tier}).
 
 \begin{itemize}
 \item Tier 0: nahrávanie a archivovanie dát, prvotné rekonštrukcie dát, distribúcia dát - CERN + Wignerov inštitút
