@@ -44,5 +44,7 @@ Keď máš zmeny nahraté, môžeš vytvoriť `pull request` (najlepšie cez str
 ## Pravidlá pri písaní dokumentu
 Dokument je písaný česko-slovensky (ideálne je nemiešať tieto dva jazyky v rámci jednej kapitoly). Všetky obrázky sa nachádzajú v priečinku `images`.
 
+**Pozor**: nepridávaj na git žiadne pdf, vie to robiť problémy
+
 ## Kontakt
 V prípade akýchkoľvek otázok ma kontaktuj na `jakub.cimerman(at)gmail.com`
